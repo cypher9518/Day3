@@ -1,0 +1,29 @@
+mkdir Demo
+cd Demo/
+touch Hello.java Demo.java
+ls
+git init
+git remote add origin https://github.com/cypher9518/Demo.git
+git remote -v
+nano Demo.java
+ls
+git status
+git add .
+git commit -m "First commit"
+git push -m origin master
+git checkout -b Demobranch
+git branch
+ls
+touch First.java
+nano First.java
+git add First.java
+git commit -m "File added"
+git push -m origin Demobranch
+git checkout master
+ls
+git merge Demobranch
+git checkout -b Secondbranch
+git branch
+git checkout master
+git push origin --delete Secondbranch
+history
